@@ -1,4 +1,4 @@
-package rivalWinner;
+package modelo;
 
 public class Modelo {
 

@@ -1,7 +1,7 @@
 package rivalWinner;
 
-import rivalWinner.Controlador;
-import rivalWinner.Vista;
+import controlador.Controlador;
+import vista.Vista;
 
 public class RivalWinner {
 

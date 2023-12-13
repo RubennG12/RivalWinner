@@ -70,27 +70,4 @@ public class Vista extends JFrame {
 		}
 
 	
-	
-	
-	
-	
-	/* public Vista() {
-			setTitle("Rival Winner");
-			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setBounds(100, 100, 450, 300);
-			pantalla = new JPanel();
-			pantalla.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-			setContentPane(pantalla);
-			SpringLayout sl_contentPane = new SpringLayout();
-			pantalla.setLayout(sl_contentPane);
-			
-			JLabel lblNewLabel = new JLabel("Rival Winner");
-			sl_contentPane.putConstraint(SpringLayout.NORTH, lblNewLabel, 10, SpringLayout.NORTH, pantalla);
-			sl_contentPane.putConstraint(SpringLayout.WEST, lblNewLabel, 166, SpringLayout.WEST, pantalla);
-			sl_contentPane.putConstraint(SpringLayout.SOUTH, lblNewLabel, 40, SpringLayout.NORTH, pantalla);
-			sl_contentPane.putConstraint(SpringLayout.EAST, lblNewLabel, -154, SpringLayout.EAST, pantalla);
-			lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
-			pantalla.add(lblNewLabel);
-		}*/
 }

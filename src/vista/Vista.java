@@ -103,29 +103,32 @@ public class Vista extends JFrame {
 				getContentPane().add(panelCenter, BorderLayout.CENTER);
 				panelCenter.setLayout(new GridLayout(5, 1, 0, 0));
 				
+				
+				Color azulClaroRW = new Color(135, 206, 250);
+				
 				JButton btnTorneoBaloncesto = new JButton("Torneo de Baloncesto");
-				Look.fontBotonesRW(btnTorneoBaloncesto, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
-				Look.cambiarColorBoton(btnTorneoBaloncesto, Color.BLUE, Color.BLACK);
+				Look.fontBotonesRW(btnTorneoBaloncesto, "New Times Roman", Font.PLAIN, 14, Color.BLACK);
+				Look.cambiarColorBoton(btnTorneoBaloncesto, azulClaroRW, Color.BLACK);
 				panelCenter.add(btnTorneoBaloncesto);
 				
 				JButton btnTorneoFutbol = new JButton("Torneo de Fútbol");
-				Look.fontBotonesRW(btnTorneoFutbol, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
-				Look.cambiarColorBoton(btnTorneoFutbol, Color.BLUE, Color.BLACK);
+				Look.fontBotonesRW(btnTorneoFutbol, "New Times Roman", Font.PLAIN, 14, Color.BLACK);
+				Look.cambiarColorBoton(btnTorneoFutbol, azulClaroRW, Color.BLACK);
 				panelCenter.add(btnTorneoFutbol);
 				
 				JButton btnTorneoPetanca = new JButton("Torneo de Petanca");
-				Look.fontBotonesRW(btnTorneoPetanca, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
-				Look.cambiarColorBoton(btnTorneoPetanca, Color.BLUE, Color.BLACK);
+				Look.fontBotonesRW(btnTorneoPetanca, "New Times Roman", Font.PLAIN, 14, Color.BLACK);
+				Look.cambiarColorBoton(btnTorneoPetanca, azulClaroRW, Color.BLACK);
 				panelCenter.add(btnTorneoPetanca);
 				
 				JButton btnTorneoCOD = new JButton("Torneo de COD");
-				Look.fontBotonesRW(btnTorneoCOD, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
-				Look.cambiarColorBoton(btnTorneoCOD, Color.BLUE, Color.BLACK);
+				Look.fontBotonesRW(btnTorneoCOD, "New Times Roman", Font.PLAIN, 14, Color.BLACK);
+				Look.cambiarColorBoton(btnTorneoCOD, azulClaroRW, Color.BLACK);
 				panelCenter.add(btnTorneoCOD);
 				
 				JButton btnTorneoChapas = new JButton("Torneo de Chapas");
-				Look.fontBotonesRW(btnTorneoChapas, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
-				Look.cambiarColorBoton(btnTorneoChapas, Color.BLUE, Color.BLACK);
+				Look.fontBotonesRW(btnTorneoChapas, "New Times Roman", Font.PLAIN, 14, Color.BLACK);
+				Look.cambiarColorBoton(btnTorneoChapas, azulClaroRW, Color.BLACK);
 				panelCenter.add(btnTorneoChapas);
 				
 				

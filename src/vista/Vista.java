@@ -2,6 +2,8 @@ package vista;
 
 import controlador.Controlador;
 import look.Look;
+
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -25,14 +27,19 @@ public class Vista extends JFrame {
 	
 	private Controlador controladorRW1;
 	
+	public Vista(){
+		
+	}
+	
+	
 	public  Vista(Controlador controladorRW1) {
 		this.controladorRW1 = controladorRW1;
 	}
 
 	private static final long serialVersionUID = 1L;
-	private JFrame pantallaRW1;
+	public JFrame pantallaRW1;
 	
-	private JDialog pantallaCargaRW1;
+	public JDialog pantallaCargaRW1;
 
 	public void cargarVentanaRW1() {
 		EventQueue.invokeLater(new Runnable() {
@@ -40,6 +47,7 @@ public class Vista extends JFrame {
 				try {
 					Vista windowRW1 = new Vista();
 					windowRW1.mostrarPantallaCargaRW1();
+					windowRW1.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -57,7 +65,7 @@ public class Vista extends JFrame {
 	        Timer temporizadorRW1 = new Timer(5000, new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
-	                ocultarPantallaCargaRW1();
+	            	ocultarPantallaCargaRW1();
 	                initializeRW1();
 	            }
 	        });
@@ -68,33 +76,62 @@ public class Vista extends JFrame {
 	    }
 	
 	 private void ocultarPantallaCargaRW1() {
-	        pantallaCargaRW1.dispose();
+		 	pantallaCargaRW1.setVisible(false);
+		 	pantallaCargaRW1.dispose();
 	    }
 
 	 private void initializeRW1() {
-		 pantallaRW1 = new JFrame();
-		 pantallaRW1.setBounds(100, 100, 450, 300);
-		 pantallaRW1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		 pantallaRW1.setVisible(true);
-		 
-		 SpringLayout springLayout = new SpringLayout();
-			getContentPane().setLayout(springLayout);
+
+			    setTitle("RivalWinner");
+			    getContentPane().setLayout(new BorderLayout(0, 0));
+			    
+			    JPanel panelTop = new JPanel();
+			    Look.cambiarColorPanel(panelTop, Color.BLUE, Color.BLACK);
+			    getContentPane().add(panelTop, BorderLayout.NORTH);
+			    
+			    JLabel tituloRW1 = new JLabel("Rival Winner");
+			    Look.fontPalabrasRW(tituloRW1, "Futura", Font.BOLD, 18, Color.WHITE);
+			    panelTop.add(tituloRW1);
+
+			    
+			    setBounds(100, 100, 450, 300);
+			    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			    
+			    
+				JPanel panelCenter = new JPanel();
+				Look.cambiarColorPanel(panelTop, Color.BLUE, Color.BLACK);
+				getContentPane().add(panelCenter, BorderLayout.CENTER);
+				panelCenter.setLayout(new GridLayout(5, 1, 0, 0));
+				
+				JButton btnTorneoBaloncesto = new JButton("Torneo de Baloncesto");
+				Look.fontBotonesRW(btnTorneoBaloncesto, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
+				Look.cambiarColorBoton(btnTorneoBaloncesto, Color.BLUE, Color.BLACK);
+				panelCenter.add(btnTorneoBaloncesto);
+				
+				JButton btnTorneoFutbol = new JButton("Torneo de Fútbol");
+				Look.fontBotonesRW(btnTorneoFutbol, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
+				Look.cambiarColorBoton(btnTorneoFutbol, Color.BLUE, Color.BLACK);
+				panelCenter.add(btnTorneoFutbol);
+				
+				JButton btnTorneoPetanca = new JButton("Torneo de Petanca");
+				Look.fontBotonesRW(btnTorneoPetanca, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
+				Look.cambiarColorBoton(btnTorneoPetanca, Color.BLUE, Color.BLACK);
+				panelCenter.add(btnTorneoPetanca);
+				
+				JButton btnTorneoCOD = new JButton("Torneo de COD");
+				Look.fontBotonesRW(btnTorneoCOD, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
+				Look.cambiarColorBoton(btnTorneoCOD, Color.BLUE, Color.BLACK);
+				panelCenter.add(btnTorneoCOD);
+				
+				JButton btnTorneoChapas = new JButton("Torneo de Chapas");
+				Look.fontBotonesRW(btnTorneoChapas, "New Times Roman", Font.PLAIN, 14, Color.WHITE);
+				Look.cambiarColorBoton(btnTorneoChapas, Color.BLUE, Color.BLACK);
+				panelCenter.add(btnTorneoChapas);
+				
+				
+
+			    setVisible(true);
 			
-			JPanel panel = new JPanel();
-			springLayout.putConstraint(SpringLayout.NORTH, panel, 10, SpringLayout.NORTH, getContentPane());
-			springLayout.putConstraint(SpringLayout.WEST, panel, 132, SpringLayout.WEST, getContentPane());
-			springLayout.putConstraint(SpringLayout.SOUTH, panel, -210, SpringLayout.SOUTH, getContentPane());
-			springLayout.putConstraint(SpringLayout.EAST, panel, -142, SpringLayout.EAST, getContentPane());
-			getContentPane().add(panel);
-			
-			JLabel nombreTitulo1 = new JLabel("Rival Winner");
-			panel.add(nombreTitulo1);
-			springLayout.putConstraint(SpringLayout.NORTH, nombreTitulo1, 15, SpringLayout.NORTH, getContentPane());
-			springLayout.putConstraint(SpringLayout.WEST, nombreTitulo1, 175, SpringLayout.WEST, getContentPane());
-			springLayout.putConstraint(SpringLayout.SOUTH, nombreTitulo1, 37, SpringLayout.NORTH, getContentPane());
-			springLayout.putConstraint(SpringLayout.EAST, nombreTitulo1, -158, SpringLayout.EAST, getContentPane());
-			Look.fontTituloRW(nombreTitulo1, "Arial", Font.BOLD, 16, Color.BLUE);
-			
-			nombreTitulo1.setVisible(true);
 		}
 }
+

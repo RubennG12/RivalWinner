@@ -10,7 +10,8 @@ public class RivalWinner {
 		Vista vistaRW1 = new Vista();
 		Controlador controladorRW1 = new Controlador(vistaRW1);
 		
-		controladorRW1.mostrarVista();
+		controladorRW1.mostrarPantallaCargaRW();
+		
 	}
 
 }

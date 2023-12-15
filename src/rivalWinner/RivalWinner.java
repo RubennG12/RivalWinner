@@ -7,10 +7,10 @@ public class RivalWinner {
 
 	public static void main(String[] args) {
 		
-		Vista miVista = new Vista();
-		Controlador miControlador = new Controlador(miVista);
+		Vista vistaRW1 = new Vista();
+		Controlador controladorRW1 = new Controlador(vistaRW1);
 		
-		miControlador.mostrarVista();
+		controladorRW1.mostrarVista();
 	}
 
 }

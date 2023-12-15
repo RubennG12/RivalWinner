@@ -4,14 +4,14 @@ import vista.Vista;
 
 public class Controlador {
 
-	Vista miVista;
+	Vista vistaRW;
 
-	public Controlador(Vista miVista) {
-		this.miVista = miVista;
+	public Controlador(Vista vistaRW) {
+		this.vistaRW = vistaRW;
 	}
 	
 	public void mostrarVista() {
-		this.miVista.mostrarPantallaCarga();
+		this.vistaRW.mostrarPantallaCargaRW1();
 	}
 	
 }

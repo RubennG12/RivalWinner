@@ -25,11 +25,22 @@ public class Look {
 	public static void cambiarColorPanel(JPanel panelRW, Color colorRW, Color colorBordeRW) {
         panelRW.setBackground(colorRW);
         panelRW.setBorder(BorderFactory.createLineBorder(colorBordeRW));
+        panelRW.revalidate();
+        panelRW.repaint();
+    }
+	
+	public static void cambiarColorPanel(JPanel panelRW, Color colorRW) {
+        panelRW.setBackground(colorRW);
+        
+        panelRW.revalidate();
+        panelRW.repaint();
     }
 	
 	public static void cambiarColorBoton(JButton botonRW, Color colorRW, Color colorBordeRW) {
         botonRW.setBackground(colorRW);
-        botonRW.setBorder(BorderFactory.createLineBorder(colorBordeRW));
+        
+        botonRW.revalidate();
+        botonRW.repaint();
     }
 	
 }

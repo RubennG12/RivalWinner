@@ -24,27 +24,46 @@ import javax.swing.SpringLayout;
 import javax.swing.JLabel;
 import java.awt.Font;
 
+
+/**
+ * Representa la interfaz gráfica de la aplicación RivalWinner
+ * Clase Vista
+ */
 public class Vista extends JFrame {
 	
 	private Controlador controladorRW1;
 	
-	//CONSTRUCTORES
+	/**
+	 * Constructor vacio
+	 */
 	public Vista(){
 		
 	}
 	
+	/**
+	 * Constructor que recibe un controlador.
+	 * @param controladorRW1 El controlador asociado a la vista.
+	 */
 	public  Vista(Controlador controladorRW1) {
 		this.controladorRW1 = controladorRW1;
 	}
 
 	//METODOS
 	private static final long serialVersionUID = 1L;
+	
+	/**
+     * Ventana principal de la aplicación.
+     */
 	public JFrame pantallaRW1;
 	
-	
+	/**
+     * Ventana de carga utilizada al iniciar la aplicación.
+     */
 	public JDialog pantallaCargaRW1;
 	
-
+	/**
+	 * Carga la ventana principal de la aplicación
+	 */
 	public void cargarVentanaRW1() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -59,7 +78,9 @@ public class Vista extends JFrame {
 		});
 	}
 	
-	
+	/**
+	 * Muestra la pantalla de carga al inicio y luego inicializa la ventana principal
+	 */
 	 public void mostrarPantallaCargaRW1() {
 	        pantallaCargaRW1 = new JDialog((JFrame) null, "Cargando...", true);
 	        pantallaCargaRW1.getContentPane().setLayout(new BorderLayout());
@@ -80,13 +101,17 @@ public class Vista extends JFrame {
 	        pantallaCargaRW1.setVisible(true);
 	    }
 	 
-	
+	 /**
+	  * Oculta y cierra la pantalla de carga
+	 */
 	 private void ocultarPantallaCargaRW1() {
 		 	pantallaCargaRW1.setVisible(false);
 		 	pantallaCargaRW1.dispose();
 	    }
 	 
-
+	 /**
+	 * Inicializa la ventana principal con sus componentes
+	 */
 	 private void initializeRW1() {
 		 
 		 		pantallaRW1 = new JFrame();

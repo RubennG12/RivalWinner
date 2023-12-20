@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"controlador"},{"l":"look"},{"l":"modelo"},{"l":"rivalWinner"},{"l":"vista"}];updateSearchResults();

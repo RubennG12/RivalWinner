@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>RivalWinner</title>
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <img src="../images/logo.png">
+                RivalWinner
+            </div>
+            <nav>
+                <img src="../images/PerfilFoto2.png" width="26px" height="auto" >
+                <a href="../Profile/index.html">Perfil</a>
+            </nav>
+    </header>
+
+
+    <div class="div_main"> 
+            <h2>Torneos Cercanos</h2>
+            <div class="div_torneo">
+                <div class="caja_torneo">
+                    <h3>Torneo de Baloncesto</h3>
+                    <p>1 de julio, 2024 | Inscripción: 25€ por equipo | Premio: 400€ | Ubicación: Aranjuez</p>
+                    <p>Únete a un emocionante torneo de baloncesto. Equipos de 3 jugadores compitiendo por el premio.</p>
+                    </br>
+                    <button class="botones">Inscribirse</button>
+                </div>
+                <div class="caja_torneo">
+                    <h3>Torneo de Fútbol</h3>
+                    <p>15 de julio, 2024 | Inscripción: 100€ por equipo | Premio: 1.000€ | Ubicación: Chinchon</p>
+                    <p>Forma un equipo de 7 jugadores y compite en este torneo de futbol. ¡Demuestra tus habilidades!</p>
+                    </br>
+                    <button class="botones">Inscribirse</button>
+                </div>
+                <div class="caja_torneo">
+                    <h3>Torneo de Voleibol</h3>
+                    <p>1 de agosto, 2024 | Inscripción: 80€ por equipo | Premio: 500€ | Ubicación: Colmenar de Oreja</p>
+                    <p>Forma un equipo de 6 jugadores y participa en este torneo de voleibol. ¡Que gane el mejor!</p>
+                    </br>
+                    <button class="botones">Inscribirse</button>
+                </div>
+                <div class="caja_torneo">
+                    <h3>Torneo de Golf</h3>
+                    <p>15 de agosto, 2024 | Inscripción: 20€ | Premio: 250€ | Ubicación: Aranjuez</p>
+                    <p>¿Eres un apasionado del golf? Demuestra tus habilidades en este torneo de golf.</p>
+                    </br>
+                    <button class="botones">Inscribirse</button>
+                </div>
+                <div class="caja_torneo">
+                    <h3>Torneo de Tenis</h3>
+                    <p>1 de septiembre, 2024 | Inscripción: 15€ | Premio: 250€ | Ubicación: Colmenar de Oreja</p>
+                    <p> Demuestra tus habilidades en la pista y compite en este emocionante torneo de tenis.</p>
+                    </br>
+                    <button class="botones">Inscribirse</button>
+                </div>
+                <div class="caja_torneo">
+                    <h3>Torneo de Natación</h3>
+                    <p>15 de septiembre, 2024 | Inscripción: 20€ | Premio: 270€ | Ubicación: Aranjuez</p>
+                    <p> Pon a prueba tus habilidades acuáticas en este torneo de natación. ¡Que gane el más rápido!</p>
+                    </br>
+                    <button class="botones">Inscribirse</button>
+                </div>
+            </div>
+            <div class="frase">
+                <p>Habrá muchos más torneos muy pronto.</p>
+            </div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Método de pago</h2>
+                    <form id="payment-form">
+                        <label for="card-name">Número de la tarjeta:</label>
+                        <input type="text" id="card-name" name="card-name" pattern="\d*" required><br><br>
+                        <label for="expiry-date">Fecha de caducidad:</label>
+                        <input type="month" id="expiry-date" name="expiry-date" required><br><br>
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" pattern="\d{3}" maxlength="3" required><br><br>
+                        <label for="owner-name">Nombre del propietario:</label>
+                        <input type="text" id="owner-name" name="owner-name" required><br><br>
+                        <button type="submit">Aceptar y Pagar</button>
+                    </form>
+                </div>
+            </div>
+
+    </div>
+
+
+    <footer>
+        © 2024 RivalWinner
+        <nav>
+            <a href="https://sportmadness.club/torneo-de-futbol-escolar-que-es-y-como-organizarlo/">Acerca de</a>
+            <a href="mailto:rubengarlan7@gmail.com">Contacto</a>
+            <a href="https://www.cloudflare.com/es-es/learning/privacy/what-is-data-privacy/">Privacidad</a>
+        </nav>
+    </footer>
+</body>
+</html>

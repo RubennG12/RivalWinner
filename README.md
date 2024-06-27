@@ -1,2 +1,2 @@
 # RivalWinner
-Proyecto de Final de DAM
+Proyecto Final de DAM
